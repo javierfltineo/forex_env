@@ -88,6 +88,6 @@ See the notebook [here](https://github.com/coynestevencharles/forex_env/blob/mai
 
 ### Adding Additional Features to the Observation Space ("Signal Features")
 
-Any additional columns found in the `df` are considered signal features. You can add e.g. news sentiment columns, moving averages, or other financial indicators. Therefore, please make sure that the dataframe passed to the model contains only the 4 (or 8) price columns plus the data you intend as signal features.
+Any additional columns found in the `df` are considered signal features. You can add e.g. news sentiment columns, moving averages, RSI, MACD, or other financial indicators. Therefore, please make sure that the dataframe passed to the model contains only the 4 (or 8) price columns plus the data you intend as signal features.
 
 The code for the price and custom signal columns is separate, so you can treat them differently by editing the `_next_observation` method. This would allow one to e.g. internally scale price values only.
